@@ -1,0 +1,29 @@
+/* Grid */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.column {
+    flex-basis: 100%;
+}
+  
+@media screen and (min-width: 800px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .column {
+        flex: 1;
+    }
+    ._25 {
+        flex: 2.5;
+    }
+    ._5 {
+        flex: 5;
+    }
+}
+
+/* Grid */

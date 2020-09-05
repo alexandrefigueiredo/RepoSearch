@@ -1,0 +1,28 @@
+.searchBox {
+  background-color: #007bFF;
+  padding: 40px 120px;
+  border-radius: 8px;
+  text-align: center;
+
+  &-title {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  &-subtitle {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    margin: 18px 0;
+  }
+
+  &-form {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #828282;
+  }
+}
