@@ -55,19 +55,20 @@
     }
 
     &-specs {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 300;
       color: #282828;
 
       span {
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 700;
+        margin-right: 5px;
       }
     }
 
     &-bio {
       margin: 12px 0;
-      font-size: 28px;
+      font-size: 20px;
       font-weight: 300;
       color: #282828;
     }
@@ -76,6 +77,18 @@
       font-size: 16px;
       font-weight: 300;
       color: #282828;
+    }
+  }
+
+  .repo {
+    margin-left: 40px;
+
+    &-card {
+      background-color: #f2f2f2;
+      border-radius: 8px;
+      padding: 40px;
+      margin-bottom: 12px;
+      color: #007bFF;
     }
   }
 }
