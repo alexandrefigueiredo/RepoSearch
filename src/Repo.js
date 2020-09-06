@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Profile = ({ user }) => (
-  <div className="column">
+const Repo = ({ user }) => (
+  <div className="column _2">
     <div className="contentBox-info user">
       <h2 className="user-name">{ user.name }</h2>
       <h4 className="user-username">{ user.login }</h4>
@@ -13,4 +13,4 @@ const Profile = ({ user }) => (
   </div>
 )
 
-export default Profile;
+export default Repo;

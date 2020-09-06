@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from 'axios';
 import './styles/App.scss';
 import Profile from './Profile';
+import Repo from './Repo';
 
 class App extends Component {
   constructor() {
@@ -28,7 +29,19 @@ class App extends Component {
           `${url}/${user}?client_id=${client_id}&client_secret=${client_secret}`
         )
         .then(({ data }) => this.setState({ user:data }));
-  }
+   }
+
+  // selectChanged(e) {
+  //   const sortBy = e.target.value;
+  //   const state = this.state;
+  //   if (sortBy == 'asc') {
+  //     state.github.sort = 'full_name: asc';
+  //   }
+  //   if (sortBy == 'desc') {
+  //     state.github.sort = 'full_name: desc';
+  //   }
+  //   this.setState({ github: { sort }});
+  // }
 
   render() {
     
@@ -36,7 +49,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <header>
+        <header >
           <div className="container">
             <div className="row">
               <div className="column">
@@ -49,8 +62,16 @@ class App extends Component {
             </div>
           </div>
         </header>
-
-        { user.length !== 0 ? <Profile user={user} /> : null }
+        <main>
+        <div className="container">
+          <div className="contentBox">
+            <div className="row">
+            { user.length !== 0 ? <Profile user={user} /> : null }
+            { user.length !== 0 ? <Repo user={user} /> : null }
+            </div>
+          </div>
+        </div>
+       </main>
       </div>
     );
   }
