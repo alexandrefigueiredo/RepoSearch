@@ -26,3 +26,45 @@
     color: #828282;
   }
 }
+
+.contentBox {
+  margin-top: 24px;
+  background-color: #E2E2E2;
+  padding: 40px 60px;
+  border-radius: 8px;
+
+  .user {
+
+    &-name {
+      font-size: 24px;
+      font-weight: 700;
+      color: #282828;
+    }
+
+    &-username {
+      font-size: 16px;
+      font-weight: 300;
+      color: #828282;
+    }
+
+    &-photo {
+      margin: 12px 0;
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    &-bio {
+      margin: 12px 0;
+      font-size: 28px;
+      font-weight: 300;
+      color: #282828;
+    }
+
+    &-mail {
+      font-size: 16px;
+      font-weight: 300;
+      color: #282828;
+    }
+  }
+}
