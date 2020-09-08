@@ -1,28 +1,106 @@
 /* Reset */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
 	font-family: 'Montserrat';
+	word-break: break-all;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
 
@@ -30,11 +108,18 @@ body {
 	line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
 	list-style: none;
 }
 
-input[type=email], input[type=number], input[type=password], input[type=tel], input[type=text], input[type=url], textarea{
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text],
+input[type=url],
+textarea {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
@@ -48,9 +133,9 @@ input[type=email], input[type=number], input[type=password], input[type=tel], in
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	outline: none;
-  }
+}
 
-  select {
+select {
 	display: inline-block;
 	padding: 12px;
 	width: 100%;
@@ -61,10 +146,50 @@ input[type=email], input[type=number], input[type=password], input[type=tel], in
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	outline: none;
-  }
+}
 
 /* Reset */
 
 .App {
-    margin: 80px 0;
+	@media screen and (min-width:768px) {
+		margin: 80px 0;
+	}
+}
+
+.btn {
+	padding: 12px 40px;
+	border-radius: 8px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	margin: 0 5px 15px;
+	text-align: center;
+
+	@media screen and (min-width:768px) {
+		margin: 0 5px;
+	}
+}
+
+.btn-primary {
+	background-color: #007bFF;
+	border-color: #007bFF;
+	transition: .2s all;
+
+	&:hover {
+		background-color: #0052aa;
+		border-color: #0052aa;
+		transition: .2s all;
+	}
+}
+
+.btn-secondary {
+	background-color: #5a5a5a;
+	border-color: #5a5a5a;
+	transition: .2s all;
+
+	&:hover {
+		background-color: #383838;
+		border-color: #383838;
+		transition: .2s all;
+	}
 }

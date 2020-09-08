@@ -29,13 +29,13 @@ const Dashboard = () => {
     setSort(e.target.value);
 
     if (e.target.value === 'asc') {
-      const aux = repos.sort((a, b) => a.stargazers_count - b.stargazers_count);
-      setRepos(aux);
+      const starsSort = repos.sort((a, b) => a.stargazers_count - b.stargazers_count);
+      setRepos(starsSort);
     }
 
     else if (e.target.value === 'desc') {
-      const aux = repos.sort((a, b) => b.stargazers_count - a.stargazers_count);
-      setRepos(aux);
+      const starsSort = repos.sort((a, b) => b.stargazers_count - a.stargazers_count);
+      setRepos(starsSort);
     }
 
   }
@@ -55,7 +55,7 @@ const Dashboard = () => {
                   </div>
                   <div className="column">
                     <select onChange={handleFilter} id="selectRepo" className="searchBox-repo" required>
-                      <option value="" selected>Selecione a ordem dos repositórios</option>
+                      <option value="">Selecione a ordem dos repositórios</option>
                       <option value="asc">Ascendente</option>
                       <option value="desc">Decrescente</option>
                     </select>

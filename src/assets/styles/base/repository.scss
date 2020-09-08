@@ -1,0 +1,74 @@
+.repositoryBox {
+  background-color: #007bFF;
+  padding: 40px 20px;
+  text-align: center;
+
+  @media screen and (min-width:768px) {
+    padding: 40px 120px;
+    border-radius: 8px;
+  }
+
+  &-title {
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+
+    @media screen and (min-width:768px) {
+      font-size: 35px;
+    }
+  }
+}
+
+.infoBox {
+  background-color: #E2E2E2;
+  padding: 40px 20px;
+  border-radius: 8px;
+
+  @media screen and (min-width:768px) {
+    margin-top: 24px;
+    padding: 40px 120px;
+    border-radius: 8px;
+  }
+
+  &-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #282828;
+
+    @media screen and (min-width:768px) {
+      font-size: 24px;
+    }
+  }
+
+  &-description {
+    font-size: 16px;
+    font-weight: 300;
+    color: #282828;
+    margin: 18px 0;
+
+    @media screen and (min-width:768px) {
+      font-size: 18px;
+    }
+  }
+
+  &-language {
+    font-size: 24px;
+    font-weight: 300;
+    color: #282828;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &-actions {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @media screen and (min-width:768px) {
+      flex-direction: row;
+    }
+  }
+}

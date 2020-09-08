@@ -1,20 +1,31 @@
 .searchBox {
   background-color: #007bFF;
-  padding: 40px 120px;
-  border-radius: 8px;
+  padding: 40px 20px;
   text-align: center;
 
+  @media screen and (min-width:768px) {
+    padding: 40px 120px;
+    border-radius: 8px;
+  }
+
   &-title {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 700;
     color: #fff;
+
+    @media screen and (min-width:768px) {
+      font-size: 60px;
+    }
   }
 
   &-subtitle {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
     color: #fff;
     margin: 18px 0;
+    @media screen and (min-width:768px) {
+      font-size: 24px;
+    }
   }
 
   &-form {
@@ -25,6 +36,7 @@
     font-weight: 300;
     color: #828282;
   }
+
   &-repo {
     display: block;
     width: 100%;
@@ -36,10 +48,15 @@
 }
 
 .contentBox {
-  margin-top: 24px;
   background-color: #E2E2E2;
-  padding: 40px 60px;
+  padding: 40px 20px;
   border-radius: 8px;
+
+  @media screen and (min-width:768px) {
+    margin-top: 24px;
+    padding: 40px 120px;
+    border-radius: 8px;
+  }
 
   .user {
     &-name {
@@ -89,7 +106,10 @@
   }
 
   .repo {
-    margin-left: 40px;
+    margin-top: 32px;
+    @media screen and (min-width:768px) {
+      margin-left: 40px;
+    }
 
     &-card {
       background-color: #f2f2f2;
