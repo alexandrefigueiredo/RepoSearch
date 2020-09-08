@@ -1,14 +1,20 @@
 import React from 'react';
+import User from '../components/User';
+import Repo from '../components/Repo';
 
-const Profile = ({ user }) => (
-  <div className="contentBox-info user">
-    <h2 className="user-name">{user.name}</h2>
-    <h4 className="user-username">{user.login}</h4>
-    <img className="user-photo" src={user.avatar_url} alt="Foto de perfil" />
-    <p className="user-specs">Seguidores <span>{user.followers}</span> Seguindo <span>{user.following}</span></p>
-    <h3 className="user-bio">{user.bio}</h3>
-    <p className="user-mail">{user.email}</p>
-  </div>
-)
+const Profile = ({user, repos}) => {
+    return (
+      <div className="row">
+        <div className="column">
+          <User user={ user } />
+        </div>
+        <div className="column _2">
+          <div className="contentBox-info repo">
+            {repos.map(repo => <Repo key={repo.name} repo={ repo }/>)}
+          </div>
+        </div>
+      </div>
+    )
+  }
 
 export default Profile;
