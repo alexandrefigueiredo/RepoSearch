@@ -50,6 +50,19 @@ input[type=email], input[type=number], input[type=password], input[type=tel], in
 	outline: none;
   }
 
+  select {
+	display: inline-block;
+	padding: 12px;
+	width: 100%;
+	background: #fff;
+	border: 0;
+	border-top: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+  }
+
 /* Reset */
 
 .App {

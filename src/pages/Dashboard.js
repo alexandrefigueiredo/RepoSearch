@@ -54,7 +54,11 @@ const Dashboard = () => {
                     <input onChange={getUser} id="search" type="text" className="searchBox-form" placeholder="GitHub username" required />
                   </div>
                   <div className="column">
-                    <input onChange={handleFilter} id="selectRepoDirection" type="text" className="searchBox-form" required />
+                    <select onChange={handleFilter} id="selectRepo" className="searchBox-repo" required>
+                      <option value="" selected>Selecione a ordem dos repositórios</option>
+                      <option value="asc">Ascendente</option>
+                      <option value="desc">Decrescente</option>
+                    </select>
                   </div>
                 </div>
               </div>
