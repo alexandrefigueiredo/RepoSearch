@@ -54,7 +54,7 @@
 
   @media screen and (min-width:768px) {
     margin-top: 24px;
-    padding: 40px 120px;
+    padding: 40px;
     border-radius: 8px;
   }
 
@@ -111,12 +111,23 @@
       margin-left: 40px;
     }
 
+    a {
+      text-decoration: none;
+    }
+
     &-card {
       background-color: #f2f2f2;
       border-radius: 8px;
       padding: 40px;
       margin-bottom: 12px;
       color: #007bFF;
+      transition: .2s all;
+
+      &:hover {
+        background-color: #747474;
+        color: #fff;
+        transition: .2s all;
+      }
     }
   }
 }

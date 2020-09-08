@@ -29,6 +29,8 @@ const Repository = () => {
                 <div className="column">
                   <div className="repositoryBox">
                     <h2 className="repositoryBox-title">{repo.full_name}</h2>
+                    <h3 className="repositoryBox-stars">{repo.stargazers_count}</h3>
+                    <i></i>
                   </div>
                 </div>
               </div>
@@ -37,9 +39,9 @@ const Repository = () => {
           <main>
             <div className="container">
               <div className="infoBox">
-                <h3 className="infoBox-name">{repo.name}</h3>
+                <h4 className="infoBox-name">{repo.name}</h4>
                 <p className="infoBox-description">{repo.description}</p>
-                <h4 className="infoBox-language">Linguagem <span>{repo.language}</span></h4>
+                <h5 className="infoBox-language">Linguagem <span>{repo.language}</span></h5>
                 <div className="infoBox-actions">
                   <a className="btn btn-primary" href={repo.html_url} target="_blank" rel="noopener noreferrer">Link do Repositório</a>
                   <Link className="btn btn-secondary" to="/">Voltar</Link>

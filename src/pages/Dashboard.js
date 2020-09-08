@@ -4,7 +4,7 @@ import api from '../services/api';
 
 const Dashboard = () => {
 
-  const [sort, setSort] = useState('asc');
+  const [sort, setSort] = useState('desc');
   const [user, setUser] = useState([]);
   const [selectedUser, setSelectedUser] = useState([]);
   const [repos, setRepos] = useState([]);

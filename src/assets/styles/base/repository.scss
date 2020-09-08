@@ -17,6 +17,17 @@
       font-size: 35px;
     }
   }
+
+  &-stars {
+    margin-top: 12px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+
+    &:before {
+      content: '★ ';
+    }
+  }
 }
 
 .infoBox {
