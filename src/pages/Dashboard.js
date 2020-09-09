@@ -47,30 +47,32 @@ const Dashboard = () => {
 
   return (
     <div className="App">
-      <header >
-        <div className="container">
-          <div className="row">
-            <div className="column">
-              <div className="searchBox">
-                <h1 className="searchBox-title">RepoSearch</h1>
-                <h3 className="searchBox-subtitle">Insira um username do GitHub e confira seus detalhes</h3>
-                <div className="row">
-                  <div className="column _2">
-                    <input onChange={getUser} id="search" type="text" className="searchBox-form" placeholder="GitHub username" required />
-                  </div>
-                  <div className="column">
-                    <select onChange={handleFilter} id="selectRepo" className="searchBox-repo" required>
-                      <option value="">Selecione a ordem dos repositórios</option>
-                      <option value="asc">Ascendente</option>
-                      <option value="desc">Decrescente</option>
-                    </select>
+      <FadeIn transitionDuration={1000}>
+        <header >
+          <div className="container">
+            <div className="row">
+              <div className="column">
+                <div className="searchBox">
+                  <h1 className="searchBox-title">RepoSearch</h1>
+                  <h3 className="searchBox-subtitle">Insira um username do GitHub e confira seus detalhes</h3>
+                  <div className="row">
+                    <div className="column _2">
+                      <input onChange={getUser} id="search" type="text" className="searchBox-form" placeholder="GitHub username" required />
+                    </div>
+                    <div className="column">
+                      <select onChange={handleFilter} id="selectRepo" className="searchBox-repo" required>
+                        <option value="">Selecione a ordem dos repositórios</option>
+                        <option value="asc">Ascendente</option>
+                        <option value="desc">Decrescente</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </header>
+        </header>
+      </FadeIn>
       <FadeIn delay={1000} transitionDuration={1000}>
         <main>
           <div className="container">

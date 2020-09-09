@@ -26,19 +26,21 @@ const Repository = () => {
     <>
       {repo && (
         <div className="App">
-          <header >
-            <div className="container">
-              <div className="row">
-                <div className="column">
-                  <div className="repositoryBox">
-                    <h2 className="repositoryBox-title">{repo.full_name}</h2>
-                    <h3 className="repositoryBox-stars">{repo.stargazers_count}</h3>
-                    <i></i>
+          <FadeIn transitionDuration={1000}>
+            <header >
+              <div className="container">
+                <div className="row">
+                  <div className="column">
+                    <div className="repositoryBox">
+                      <h2 className="repositoryBox-title">{repo.full_name}</h2>
+                      <h3 className="repositoryBox-stars">{repo.stargazers_count}</h3>
+                      <i></i>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </header>
+            </header>
+          </FadeIn>
           <FadeIn delay={1000} transitionDuration={1000}>
             <main>
               <div className="container">
