@@ -2,7 +2,7 @@ import React from 'react';
 import FadeIn from 'react-fade-in';
 
 const Profile = ({ user }) => (
-  <FadeIn>
+  <FadeIn delay={200} transitionDuration={800}>
     <div className="contentBox-info user">
       <h2 className="user-name">{user.name}</h2>
       <h4 className="user-username">{user.login}</h4>

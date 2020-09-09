@@ -3,6 +3,8 @@ import {Switch, Route} from 'react-router-dom';
 import Dashboard from '../pages/Dashboard';
 import Repository from '../pages/Repository';
 
+/* Roteamento do projeto */
+
 const Routes = () => (
     <Switch>
       <Route path="/" exact component={Dashboard}/>

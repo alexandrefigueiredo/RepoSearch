@@ -8,8 +8,9 @@ const Dashboard = () => {
   const [user, setUser] = useState([]);
   const [repos, setRepos] = useState([]);
 
-  const getUser = (e) => {
+  /* Função para pegar informações do usuário da API */
 
+  const getUser = (e) => {
     api
       .get(
         `users/${e.target.value}`
@@ -25,6 +26,8 @@ const Dashboard = () => {
         setRepos(dataSort)
       });
   }
+
+  /* Função para pegar filtrar a ordem de Repositórios entre ASC ou DESC */
 
   const handleFilter = (e) => {
     setSort(e.target.value);

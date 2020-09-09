@@ -8,6 +8,8 @@ const Repository = () => {
   const { params } = useRouteMatch();
   const [repo, setRepo] = useState(null);
 
+  /* Função para pegar informações do Repositório */
+
   useEffect(() => {
     api
       .get(
