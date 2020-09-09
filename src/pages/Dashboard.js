@@ -6,11 +6,9 @@ const Dashboard = () => {
 
   const [sort, setSort] = useState('desc');
   const [user, setUser] = useState([]);
-  const [selectedUser, setSelectedUser] = useState([]);
   const [repos, setRepos] = useState([]);
 
   const getUser = (e) => {
-    setSelectedUser(e.target.value);
 
     api
       .get(
@@ -22,7 +20,10 @@ const Dashboard = () => {
       .get(
         `users/${e.target.value}/repos?sort=stars&direction=${sort}`
       )
-      .then(({ data }) => setRepos(data));
+      .then(({ data }) => {
+        const dataSort = data.sort((a, b) => b.stargazers_count - a.stargazers_count);
+        setRepos(dataSort)
+      });
   }
 
   const handleFilter = (e) => {

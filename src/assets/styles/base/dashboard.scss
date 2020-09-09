@@ -23,6 +23,7 @@
     font-weight: 300;
     color: #fff;
     margin: 18px 0;
+
     @media screen and (min-width:768px) {
       font-size: 24px;
     }
@@ -107,6 +108,7 @@
 
   .repo {
     margin-top: 32px;
+
     @media screen and (min-width:768px) {
       margin-left: 40px;
     }
@@ -122,11 +124,27 @@
       margin-bottom: 12px;
       color: #007bFF;
       transition: .2s all;
+      display: flex;
+      justify-content: space-between;
+
+      &__stars {
+        font-size: 16px;
+        font-weight: 700;
+        color: #282828;
+
+        &:before {
+          content: '★ ';
+        }
+      }
 
       &:hover {
         background-color: #747474;
         color: #fff;
         transition: .2s all;
+
+        .repo-card__stars {
+          color: #fff;
+        }
       }
     }
   }
