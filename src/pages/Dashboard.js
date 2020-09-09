@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import FadeIn from 'react-fade-in';
 import Profile from '../components/Profile';
 import api from '../services/api';
 
@@ -70,13 +71,15 @@ const Dashboard = () => {
           </div>
         </div>
       </header>
-      <main>
-        <div className="container">
-          <div className="contentBox">
-            {user.length !== 0 ? <Profile user={user} repos={repos} /> : null}
+      <FadeIn delay={1000} transitionDuration={1000}>
+        <main>
+          <div className="container">
+            <div className="contentBox">
+              {user.length !== 0 ? <Profile user={user} repos={repos} /> : null}
+            </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </FadeIn>
     </div>
   );
 }

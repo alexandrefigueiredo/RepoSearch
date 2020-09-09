@@ -4,6 +4,7 @@
   text-align: center;
 
   @media screen and (min-width:768px) {
+    height: unset;
     padding: 40px 120px;
     border-radius: 8px;
   }
@@ -51,12 +52,12 @@
 .contentBox {
   background-color: #E2E2E2;
   padding: 40px 20px;
-  border-radius: 8px;
 
   @media screen and (min-width:768px) {
     margin-top: 24px;
     padding: 40px;
     border-radius: 8px;
+    min-height: 450px;
   }
 
   .user {
