@@ -1,4 +1,4 @@
-# RepoSearch (eSapiens Test)
+# RepoSearch
 
 ## To run the project
 
